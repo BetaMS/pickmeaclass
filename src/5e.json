@@ -12,7 +12,7 @@
         "Artificer",
         "Channel your inner mad scientist or Tony Stark! Artificers are those who spend most of their free time creating all sorts of artifacts, weapons and more. This class shines when played by imaginative players, as it requires you to describe your spells as being “cast” or applied by tiny tools or creations. Playing this makes you the brain of the group, the problem solver, as well as the weird strategist that infuses recordings in mundane objects and creates magical ones.",
         "https://www.dndbeyond.com/classes/artificer",
-        0,
+        1,
         0
     ],
     [
@@ -20,7 +20,7 @@
         "Barbarian",
         "Filled with their destructive rage and primal instincts, the barbarian is the class you choose if you want to be the meat shield in the front line dealing great amounts of damage. Who needs a shield when you can stand your foes’ puny attacks with your hardened skin and/or high evasiveness?",
         "https://www.dndbeyond.com/classes/barbarian",
-        0,
+        2,
         0
     ],
     [ 
@@ -28,7 +28,7 @@
         "Bard",
         "A true jack of all trades; a bard can cover great amounts of ground when speaking about what they are able to do. A performer at heart, an inspiration to its allies, but above all a foul-mouthed to its foes. With its great charisma, his/her voice becomes its greatest weapon.",
         "https://www.dndbeyond.com/classes/bard",
-        0,
+        3,
         0
     ],
     [ 
@@ -36,7 +36,7 @@
         "Cleric",
         "As well as with bards, clerics cover a wide amount of possibilities depending on the god you choose to follow. They are high spirited servants of their deities and follow their domains to choose a way of life. Both a warrior and spellcaster, they are able to cover practically any role in a party. Depending on their subclass, their Channel Divinity ability acts in different ways, granting direct powers from their gods.",
         "https://www.dndbeyond.com/classes/cleric",
-        0,
+        4,
         0
     ],
     [ 
@@ -44,7 +44,7 @@
         "Druid",
         "Preservers of balance and nature’s warriors, the druids aid their party members by using great support spells, as well as heavy damage dealing ones. They speak the language of the flora and fauna, as well as they can shapeshift into a wide amount of beasts for combat or situational purposes.",
         "https://www.dndbeyond.com/classes/druid",
-        0,
+        5,
         0
     ],
     [ 
@@ -52,7 +52,7 @@
         "Fighter",
         "What does a fighter do best? Well, fight of course. A really versatile class, as it can work in numerous ways. Add the fighting style and you can choose to have a one handed weapon accompanied by a shield, have a two handed weapon, two one handed ones (dual wielding), a ranged weapon and more! Once you’ve got that decided, ready yourself to start demolishing your foes, be it with your mighty strength or dexterous precision!",
         "https://www.dndbeyond.com/classes/fighter",
-        0,
+        6,
         0
     ],
     [ 
@@ -60,7 +60,7 @@
         "Monk",
         "Martial artists who can channel their Ki to do impressive feats as if they were magic users. No armor is necessary, just dexterity and the power of your mind. Deflect missiles thrown at you, changing the target to your enemies, move at the speed of the wind and fill your foes’ faces with a flurry blows.",
         "https://www.dndbeyond.com/classes/monk",
-        0,
+        7,
         0
     ],
     [ 
@@ -68,7 +68,7 @@
         "Paladin",
         "A paladin is a person guided by an oath, their force of will and devotion so strong they are granted the ability to cast spells to smite their foes. They fight for justice and righteousness, with the idea of following their oath and ideals to the very end. For this, they use heavy armor to be front liners and protect their allies.",
         "https://www.dndbeyond.com/classes/paladin",
-        0,
+        8,
         0
     ],
     [ 
@@ -76,7 +76,7 @@
         "Ranger",
         "A natural explorer seeking adventures, who on their way found a special hatred towards a certain beast or monster. Able to master any fighting style as long as they don’t involve heavy weapons or armor. Spellcasters by default, due to their connection with nature and/or the Feywild, they are excellent scouts and allies to have by your side.",
         "https://www.dndbeyond.com/classes/ranger",
-        0,
+        9,
         0
     ],
     [ 
@@ -84,7 +84,7 @@
         "Rogue",
         "Let’s get shady, grab a dagger and start stabbing. Rogues excel at sneaking around, scouting ahead, being dexterous and about everything you would expect a thief to be good at. In dungeons, they can help their party by deactivating traps or opening locked doors. Don’t expect them to wear much armor, nor be able to carry heavy stuff; but were your task to need some delicacy or swashbuckling, you’ve found the right person.",
         "https://www.dndbeyond.com/classes/rogue",
-        0,
+        10,
         0
     ],
     [ 
@@ -92,7 +92,7 @@
         "Sorcerer",
         "Due to some random or pre-established occurrence, magic runs through you. This means you can “cheat” in a certain way to be able to use magic at will, instead of having to learn how to cast it. Sorcerers are also equipped with a pool of magic they get their sorcery points from, letting them twist spells to their will in different ways.",
         "https://www.dndbeyond.com/classes/sorcerer",
-        0,
+        11,
         0
     ],
     [ 
@@ -100,7 +100,7 @@
         "Warlock",
         "Warlocks make pacts with extremely powerful beings, who don’t mind lending some power as they have so much they don’t even notice. However, it all comes with a price: There’s a reason this entity decided to accept the pact, and you might need to do some stuff to maintain the accord. Decide whether you want to have a big spellbook full of incantations, a strange summonable weapon or weird servants. Will you perish in the way to becoming an eldritch master?",
         "https://www.dndbeyond.com/classes/warlocks",
-        0,
+        12,
         0
     ],
     [ 
@@ -108,7 +108,7 @@
         "Wizard",
         "Wizards decide to go in adventures to further their knowledge. The great world in front of them has thousands of spells for you to learn and master. With a spellbook at hand, they will look for or buy them to become a greater spellcaster. Just transcribe them to the book and you’ll understand why wizards are such a versatile class. The amount of spells they can learn greatly surpasses all other classes’ lists.",
         "https://www.dndbeyond.com/classes/wizard",
-        0,
+        13,
         0
     ],
     [ 
@@ -116,7 +116,7 @@
         "Want some cool magic?",
         "Fuck yeah!",
         "I'm alright.",
-        2,
+        25,
         15
     ],
     [ 
@@ -125,7 +125,7 @@
         "Maybe just a little...",
         "No",
         16,
-        20
+        19
     ],
     [
         0,
@@ -138,9 +138,65 @@
     [
         0,
         "Wanna be a master of the wilds?",
-        "!",
-        "Not really",
+        "For the wilds!",
+        "Not really.",
         9,
         18
+    ],
+    [
+        0,
+        "How about just a hunter?",
+        "Sure",
+        "Nah",
+        9,
+        0
+    ],
+    [
+        0,
+        "Wanna do martial arts?",
+        "Kiai!",
+        "Not really.",
+        7,
+        20
+    ],
+    [
+        0,
+        "Are you fueld by rage?",
+        "Often",
+        "I'm pretty chill.",
+        2,
+        21
+    ],
+    [
+        0,
+        "Wanna be stealthy?",
+        "...",
+        "Nah",
+        10,
+        22
+    ],
+    [
+        0,
+        "Are you good at picking locks?",
+        "The Best!",
+        "Horrible",
+        10,
+        23
+    ],
+    [
+        0,
+        "Wanna be a master of arms?",
+        "Hell yeah!",
+        "Nah",
+        6,
+        24
+    ],
+    [
+        0,
+        "Are you good at fighting?",
+        "I'm pretty good",
+        "Not really",
+        6,
+        0
     ]
 ]

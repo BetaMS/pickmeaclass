@@ -67,17 +67,16 @@ class App extends Component {
 
     //Checks to see if the data is a finish or a question
     if(currentQuestion[0] === 0){
-      //If it's a question it sets the data as it should.
       this.setState({
         isFinished: false
       });
     }
     else{
-      //If it's a finish it'll set the data differently
       this.setState({
         isFinished: true
       });
     }
+    //Sets the data
     this.setState({
       question: currentQuestion[1],
       one: currentQuestion[2],
@@ -101,40 +100,74 @@ class App extends Component {
 
   render(){
 
-    //Booleans for icon logic. Yes this is a little janky, and no one should have to explain their logic this much... But it works... 
-    // first value equaling 14 means it's the start point
-    // first value equaling or greater then 15 is checking if they have decided for full casting or not. 
-    let artificerValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let barbarianValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let bardValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let clericValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let druidValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let fighterValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let monkValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let paladinValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let rangerValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let rogueValid = this.state.oneValue == 14 || this.state.oneValue >= 15 ;
-    let sorcererValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let warlockValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
-    let wizardValid = this.state.oneValue == 14 || this.state.oneValue == 15 || this.state.oneValue > 20;
+    //Booleans for icon logic. Yes this is a little janky and no one should have to explain their logic this much... But it works...  
+    let nextValue = this.state.oneValue;
+
+    //This is the boolean that tells us if we're on a class description or on a question.
+    let isFinished = this.state.isFinished;
+
+    //This covers the logic for making sure the icons are on for the first two questions
+    let Base = nextValue == 14 || nextValue == 25;
+    let noMagic = nextValue == 16;
+
+    //These are the logic to make sure that the individual icons stay on when they neeed to be on.
+    let paladinRange = nextValue > 13 && nextValue <= 18 || nextValue == 25;
+    let rangerRange = nextValue > 13 && nextValue <= 18 || nextValue == 25;
+    let monkRange = nextValue > 18 && nextValue <= 20 || nextValue == 25;
+    let barbarianRange = nextValue > 18 && nextValue <= 21;
+    let rogueRange = nextValue > 18 && nextValue <= 22;
+    let fighterRange = nextValue > 18 && nextValue <= 25;
+
+    //These are the logic for checking if an individual class is next.
+    let barbarianNext = nextValue == 2;
+    let fighterNext = nextValue == 6;
+    let monkNext = nextValue == 7;
+    let paladinNext = nextValue == 8;
+    let rangerNext = nextValue == 9;
+    let rogueNext = nextValue == 10;
+
+    //These are the logic for making sure icons stay on for classes that come after others. This isn't needed for classes that come last.
+    let paladinOn = (paladinNext && !isFinished);
+    let monkOn = (monkNext && !isFinished);
+    let barbarianOn = (barbarianNext && !isFinished);
+    let rogueOn = (rogueNext && !isFinished)
+    
+
+    //This is where all the logic from above comes together to make sure that the icons are on or off when they need too be.
+    let artificerValid = Base;
+    let barbarianValid = Base || noMagic || barbarianRange || (monkNext && !isFinished) || barbarianNext;
+    let bardValid = Base;
+    let clericValid = Base;
+    let druidValid = Base;
+    let fighterValid = Base || noMagic || fighterRange || monkOn || rogueOn || barbarianOn || fighterNext;
+    let monkValid = Base || noMagic || monkRange || monkNext;
+    let paladinValid = paladinRange || paladinNext;
+    let rangerValid = rangerRange || paladinOn || rangerNext;
+    let rogueValid = Base || noMagic || rogueRange || monkOn || barbarianOn || rogueNext;
+    let sorcererValid = Base;
+    let warlockValid = Base;
+    let wizardValid = Base;
+
+
+    
 
     //Checks the isFinished boolean, which is set depending on data passed from the json
     return(
       <main>
         <header>
-          <img src={artificerValid ? artificerx : artificer} alt="d20 image" className="D20"/>
-          <img src={barbarianValid ? barbarianx : barbarian} alt="d20 image" className="D20"/>
-          <img src={bardValid ? bardx : bard} alt="d20 image" className="D20"/>
-          <img src={clericValid ? clericx : cleric} alt="d20 image" className="D20"/>
-          <img src={druidValid ? druidx : druid} alt="d20 image" className="D20"/> 
-          <img src={fighterValid ? fighterx : fighter} alt="d20 image" className="D20"/> 
-          <img src={monkValid ? monkx : monk} alt="d20 image" className="D20"/> 
-          <img src={paladinValid ? paladinx : paladin} alt="d20 image" className="D20"/> 
-          <img src={rangerValid ? rangerx : ranger} alt="d20 image" className="D20"/> 
-          <img src={rogueValid ? roguex : rogue} alt="d20 image" className="D20"/> 
-          <img src={sorcererValid ? sorcererx : sorcerer} alt="d20 image" className="D20"/> 
-          <img src={warlockValid ? warlockx : warlock} alt="d20 image" className="D20"/> 
-          <img src={wizardValid ? wizardx : wizard} alt="d20 image" className="D20"/> 
+          <img src={artificerValid ? artificerx : artificer} alt="artificer" className="D20"/>
+          <img src={barbarianValid ? barbarianx : barbarian} alt="barbarian" className="D20"/>
+          <img src={bardValid ? bardx : bard} alt="bard" className="D20"/>
+          <img src={clericValid ? clericx : cleric} alt="cleric" className="D20"/>
+          <img src={druidValid ? druidx : druid} alt="druid" className="D20"/> 
+          <img src={fighterValid ? fighterx : fighter} alt="fighter" className="D20"/> 
+          <img src={monkValid ? monkx : monk} alt="monk" className="D20"/> 
+          <img src={paladinValid ? paladinx : paladin} alt="paladin" className="D20"/> 
+          <img src={rangerValid ? rangerx : ranger} alt="ranger" className="D20"/> 
+          <img src={rogueValid ? roguex : rogue} alt="rogue" className="D20"/> 
+          <img src={sorcererValid ? sorcererx : sorcerer} alt="sorcerer" className="D20"/> 
+          <img src={warlockValid ? warlockx : warlock} alt="warlock" className="D20"/> 
+          <img src={wizardValid ? wizardx : wizard} alt="wizard" className="D20"/> 
         </header>
 
         <section className="Container">
