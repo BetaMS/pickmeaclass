@@ -1,8 +1,4 @@
 import React, {Component} from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import theData from './5e.json';
@@ -46,7 +42,7 @@ class App extends Component {
     super()
     this.state = {
       isFinished: false,
-      question: "Pick a class for 5e?",
+      question: "Pick a class for DnD 5e?",
       one: "Sure",
       two: "Nah",
       oneValue: 14,
@@ -107,24 +103,24 @@ class App extends Component {
     let isFinished = this.state.isFinished;
 
     //This covers the logic for making sure the icons are on for the first two questions
-    let Base = nextValue == 14 || nextValue == 25;
-    let noMagic = nextValue == 16;
+    let Base = nextValue === 14 || nextValue === 25;
+    let noMagic = nextValue === 16;
 
     //These are the logic to make sure that the individual icons stay on when they neeed to be on.
-    let paladinRange = nextValue > 13 && nextValue <= 18 || nextValue == 25;
-    let rangerRange = nextValue > 13 && nextValue <= 18 || nextValue == 25;
-    let monkRange = nextValue > 18 && nextValue <= 20 || nextValue == 25;
+    let paladinRange = (nextValue > 13 && nextValue <= 18) || nextValue === 25;
+    let rangerRange = (nextValue > 13 && nextValue <= 18) || nextValue === 25;
+    let monkRange = (nextValue > 18 && nextValue <= 20) || nextValue === 25;
     let barbarianRange = nextValue > 18 && nextValue <= 21;
     let rogueRange = nextValue > 18 && nextValue <= 22;
     let fighterRange = nextValue > 18 && nextValue <= 25;
 
     //These are the logic for checking if an individual class is next.
-    let barbarianNext = nextValue == 2;
-    let fighterNext = nextValue == 6;
-    let monkNext = nextValue == 7;
-    let paladinNext = nextValue == 8;
-    let rangerNext = nextValue == 9;
-    let rogueNext = nextValue == 10;
+    let barbarianNext = nextValue === 2;
+    let fighterNext = nextValue === 6;
+    let monkNext = nextValue === 7;
+    let paladinNext = nextValue === 8;
+    let rangerNext = nextValue === 9;
+    let rogueNext = nextValue === 10;
 
     //These are the logic for making sure icons stay on for classes that come after others. This isn't needed for classes that come last.
     let paladinOn = (paladinNext && !isFinished);
@@ -147,9 +143,6 @@ class App extends Component {
     let sorcererValid = Base;
     let warlockValid = Base;
     let wizardValid = Base;
-
-
-    
 
     //Checks the isFinished boolean, which is set depending on data passed from the json
     return(

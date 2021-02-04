@@ -36,7 +36,6 @@ html, body{
     }
 
       main{
-        
         border-radius: 8% 8% 5% 5%;
         box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
@@ -136,8 +135,8 @@ html, body{
             color: #7a7a7a;
             font-family: 'josefin_sansthin_italic', Arial, sans-serif;
             text-align: center;
-            text-overflow: clip;
             width: 640px;
+            word-wrap: break-word;
           }
 
 
@@ -194,3 +193,54 @@ html, body{
   margin: 5px;
 }
 
+@media (max-width: 500px) {
+
+  body{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .title{
+    height: 20%;
+  }
+
+  h2{
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  p{
+    width: 350px;
+  }
+
+  header{
+    margin-top: 0;
+    line-break: break-all;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 150px;
+  }
+  section{
+    width: 400px;
+    height: 350px;
+  }
+
+  .coffeeMaker{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .paragraph{
+    text-overflow: wrap;
+    height: 80%;
+    padding-bottom: 0px;
+  }
+
+  .buttonGroup{
+    margin-top: 80px;
+  }
+
+}

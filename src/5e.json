@@ -1,7 +1,7 @@
 [
     [
         0,
-        "Pick a class for 5e?",
+        "Pick a class for DnD 5e?",
         "Sure",
         "Nah",
         14,
@@ -115,7 +115,7 @@
         0,
         "Want some cool magic?",
         "Fuck yeah!",
-        "I'm alright.",
+        "No thanks.",
         25,
         15
     ],
@@ -145,7 +145,7 @@
     ],
     [
         0,
-        "How about just a hunter?",
+        "You could just be a hunter?",
         "Sure",
         "Nah",
         9,
