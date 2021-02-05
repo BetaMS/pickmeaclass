@@ -5,7 +5,7 @@
         "Sure",
         "Nah",
         14,
-        36
+        35
     ],
     [ 
         1,
@@ -281,16 +281,16 @@
     ],
     [
         0,
-        "Want to restart?",
-        "Let's restart",
+        "Well, looks like we're out of options.",
+        "Restart",
         "No",
         14,
         36
     ],
     [
         0,
-        "Well theres not really anything else",
-        "Let's restart",
+        "Click 'Restart' to go back.",
+        "Restart",
         "No",
         14,
         37

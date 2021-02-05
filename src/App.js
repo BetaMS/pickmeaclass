@@ -49,7 +49,7 @@ class App extends Component {
       one: "Sure",
       two: "Nah",
       oneValue: 14,
-      twoValue: 36,
+      twoValue: 35,
       whichEdition: 5,
       data: []
     }
@@ -106,15 +106,15 @@ class App extends Component {
     let isFinished = this.state.isFinished;
 
     //This covers the logic for making sure the icons are on for the first two questions
-    let base = ((nextValue === 14 && this.state.twoValue < 37) || nextValue === 25);
+    let base = ((nextValue === 14 && this.state.twoValue < 36) || nextValue === 25);
     let noMagic = nextValue === 16;
     let magic = nextValue === 26;
     let outOfRange = nextValue === 0;
     
 
     //These are the logic to make sure that the individual icons stay on when they neeed to be on.
-    let paladinRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 37) || nextValue === 25;
-    let rangerRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 37) || nextValue === 25;
+    let paladinRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 36) || nextValue === 25;
+    let rangerRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 36) || nextValue === 25;
     let monkRange = (nextValue > 18 && nextValue <= 20) || nextValue === 25;
     let barbarianRange = nextValue > 18 && nextValue <= 21;
     let rogueRange = nextValue > 18 && nextValue <= 22;
