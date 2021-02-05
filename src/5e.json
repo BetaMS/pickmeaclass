@@ -5,7 +5,7 @@
         "Sure",
         "Nah",
         14,
-        0
+        36
     ],
     [ 
         1,
@@ -149,7 +149,7 @@
         "Sure",
         "Nah",
         9,
-        0
+        35
     ],
     [
         0,
@@ -197,6 +197,310 @@
         "I'm pretty good",
         "Not really",
         6,
-        0
+        35
+    ],
+    [
+        0,
+        "Want the option to be more support focused?",
+        "Okay",
+        "Nay",
+        26,
+        31
+    ],
+    [
+        0,
+        "Want to be really into nature?",
+        "Sure",
+        "Nope",
+        5,
+        27
+    ],
+    [
+        0,
+        "Want to be really into god/'s?",
+        "Amen!",
+        "Nope",
+        4,
+        28
+    ],
+    [
+        0,
+        "Want to be really into magic items?",
+        "You betcha!",
+        "Nope",
+        1,
+        29
+    ],
+    [
+        0,
+        "Doot Doot Magic Flute?",
+        "Doot!",
+        "What...",
+        3,
+        30
+    ],
+    [
+        0,
+        "Want to inspire people with your stories/music?",
+        "Oh, yeah of course!",
+        "Nope",
+        3,
+        31
+    ],
+    [
+        0,
+        "Want to turn into a bear?",
+        "Fuck yes!",
+        "Nah",
+        5,
+        32
+    ],
+    [
+        0,
+        "What if your magic came from a pact with a magical being?",
+        "Absolutely!",
+        "Nah",
+        12,
+        33
+    ],
+    [
+        0,
+        "What if your magic came from a magical ancestor?",
+        "Sure!",
+        "Nah",
+        11,
+        34
+    ],
+    [
+        0,
+        "What if your magic came from long hours of studying?",
+        "Absolutely!",
+        "Nah",
+        13,
+        35
+    ],
+    [
+        0,
+        "Want to restart?",
+        "Let's restart",
+        "No",
+        14,
+        36
+    ],
+    [
+        0,
+        "Well theres not really anything else",
+        "Let's restart",
+        "No",
+        14,
+        37
+    ],
+    [
+        0,
+        "Are you just saying no to see what happens?",
+        "Let's restart",
+        "No",
+        14,
+        38
+    ],
+    [
+        0,
+        "Well I guess I can't stop you...",
+        "Let's restart",
+        "No",
+        14,
+        39
+    ],
+    [
+        0,
+        "You can restart whenever you want too...",
+        "Let's restart",
+        "No",
+        14,
+        40
+    ],
+    [
+        0,
+        ".",
+        "Let's restart",
+        "No",
+        14,
+        41
+    ],
+    [
+        0,
+        "..",
+        "Let's restart",
+        "No",
+        14,
+        42
+    ],
+    [
+        0,
+        "...",
+        "Let's restart",
+        "No",
+        14,
+        43
+    ],
+    [
+        0,
+        "....",
+        "Let's restart",
+        "No",
+        14,
+        44
+    ],
+    [
+        0,
+        ".....",
+        "Let's restart",
+        "No",
+        14,
+        45
+    ],
+    [
+        0,
+        "The buttons right there...",
+        "Let's restart",
+        "No",
+        14,
+        46
+    ],
+    [
+        0,
+        ".",
+        "Let's restart",
+        "No",
+        14,
+        47
+    ],
+    [
+        0,
+        "..",
+        "Let's restart",
+        "No",
+        14,
+        48
+    ],
+    [
+        0,
+        "...",
+        "Let's restart",
+        "No",
+        14,
+        49
+    ],
+    [
+        0,
+        "....",
+        "Let's restart",
+        "No",
+        14,
+        50
+    ],
+    [
+        0,
+        ".....",
+        "Let's restart",
+        "No",
+        14,
+        51
+    ],
+    [
+        0,
+        "Just waiting...",
+        "Let's restart",
+        "No",
+        14,
+        52
+    ],
+    [
+        0,
+        ".",
+        "Let's restart",
+        "No",
+        14,
+        53
+    ],
+    [
+        0,
+        "..",
+        "Let's restart",
+        "No",
+        14,
+        54
+    ],
+    [
+        0,
+        "...",
+        "Let's restart",
+        "No",
+        14,
+        55
+    ],
+    [
+        0,
+        "....",
+        "Let's restart",
+        "No",
+        14,
+        56
+    ],
+    [
+        0,
+        ".....",
+        "Let's restart",
+        "No",
+        14,
+        57
+    ],
+    [
+        0,
+        "Just asking to be clicked...",
+        "Let's restart",
+        "No",
+        14,
+        58
+    ],
+    [
+        0,
+        ".",
+        "Let's restart",
+        "No",
+        14,
+        59
+    ],
+    [
+        0,
+        "..",
+        "Let's restart",
+        "No",
+        14,
+        60
+    ],
+    [
+        0,
+        "...",
+        "Let's restart",
+        "No",
+        14,
+        61
+    ],
+    [
+        0,
+        "....",
+        "Let's restart",
+        "No",
+        14,
+        62
+    ],
+    [
+        0,
+        ".....",
+        "Let's restart",
+        "No",
+        14,
+        39
     ]
 ]

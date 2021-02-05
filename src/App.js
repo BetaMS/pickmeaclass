@@ -36,6 +36,9 @@ import wizardx from './images/Wizardx.png';
 //This coffee icon is copyright of AomAm on Sotckio.
 import coffee from './images/coffee.png';
 
+//These icons belong to github and twitter
+import github from './images/github-icon.png'
+
 class App extends Component {
 
   constructor() {
@@ -46,7 +49,7 @@ class App extends Component {
       one: "Sure",
       two: "Nah",
       oneValue: 14,
-      twoValue: 0,
+      twoValue: 36,
       whichEdition: 5,
       data: []
     }
@@ -103,46 +106,65 @@ class App extends Component {
     let isFinished = this.state.isFinished;
 
     //This covers the logic for making sure the icons are on for the first two questions
-    let Base = nextValue === 14 || nextValue === 25;
+    let base = ((nextValue === 14 && this.state.twoValue < 37) || nextValue === 25);
     let noMagic = nextValue === 16;
+    let magic = nextValue === 26;
+    let outOfRange = nextValue === 0;
+    
 
     //These are the logic to make sure that the individual icons stay on when they neeed to be on.
-    let paladinRange = (nextValue > 13 && nextValue <= 18) || nextValue === 25;
-    let rangerRange = (nextValue > 13 && nextValue <= 18) || nextValue === 25;
+    let paladinRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 37) || nextValue === 25;
+    let rangerRange = (nextValue > 13 && nextValue <= 18 && this.state.twoValue < 37) || nextValue === 25;
     let monkRange = (nextValue > 18 && nextValue <= 20) || nextValue === 25;
     let barbarianRange = nextValue > 18 && nextValue <= 21;
     let rogueRange = nextValue > 18 && nextValue <= 22;
     let fighterRange = nextValue > 18 && nextValue <= 25;
 
     //These are the logic for checking if an individual class is next.
+    let artificerNext = nextValue === 1;
     let barbarianNext = nextValue === 2;
+    let bardNext = nextValue === 3;
+    let clericNext = nextValue === 4;
+    let druidNext = nextValue === 5;
     let fighterNext = nextValue === 6;
     let monkNext = nextValue === 7;
     let paladinNext = nextValue === 8;
     let rangerNext = nextValue === 9;
     let rogueNext = nextValue === 10;
+    let sorcererNext = nextValue === 11;
+    let warlockNext = nextValue === 12;
+    let wizardNext = nextValue === 13;
 
     //These are the logic for making sure icons stay on for classes that come after others. This isn't needed for classes that come last.
     let paladinOn = (paladinNext && !isFinished);
     let monkOn = (monkNext && !isFinished);
     let barbarianOn = (barbarianNext && !isFinished);
-    let rogueOn = (rogueNext && !isFinished)
+    let rogueOn = (rogueNext && !isFinished);
+    let clericOn = (clericNext && !isFinished);
+    let artificerOn = (artificerNext && !isFinished);
+    let druidOn = (druidNext && !isFinished);
+    let druidOn2 = druidOn && this.state.twoValue !== 32;
+    let bardOn = (bardNext && !isFinished);
+    let warlockOn = (warlockNext && !isFinished);
+    let sorcererOn = (sorcererNext && !isFinished);
     
 
     //This is where all the logic from above comes together to make sure that the icons are on or off when they need too be.
-    let artificerValid = Base;
-    let barbarianValid = Base || noMagic || barbarianRange || (monkNext && !isFinished) || barbarianNext;
-    let bardValid = Base;
-    let clericValid = Base;
-    let druidValid = Base;
-    let fighterValid = Base || noMagic || fighterRange || monkOn || rogueOn || barbarianOn || fighterNext;
-    let monkValid = Base || noMagic || monkRange || monkNext;
-    let paladinValid = paladinRange || paladinNext;
+    let artificerValid = base || magic || druidOn2 || clericOn || artificerNext;
+    let barbarianValid = base || noMagic || barbarianRange || (monkNext && !isFinished) || barbarianNext;
+    let bardValid = base || magic || druidOn2 || clericOn || artificerOn || bardNext;
+    let clericValid = base || magic || druidOn2 || clericNext;
+    let druidValid = base || magic || druidNext || clericOn || artificerOn || bardOn;
+    let fighterValid = base || noMagic || fighterRange || monkOn || rogueOn || barbarianOn || fighterNext;
+    let monkValid = base || noMagic || monkRange || monkNext;
+    let paladinValid = (paladinRange || paladinNext) || outOfRange;
     let rangerValid = rangerRange || paladinOn || rangerNext;
-    let rogueValid = Base || noMagic || rogueRange || monkOn || barbarianOn || rogueNext;
-    let sorcererValid = Base;
-    let warlockValid = Base;
-    let wizardValid = Base;
+    let rogueValid = base || noMagic || rogueRange || monkOn || barbarianOn || rogueNext;
+    let sorcererValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockOn || sorcererNext;
+    let warlockValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockNext;
+    let wizardValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockOn || sorcererOn || wizardNext;
+
+    document.title = "Pick Me A Class" 
 
     //Checks the isFinished boolean, which is set depending on data passed from the json
     return(
@@ -179,7 +201,7 @@ class App extends Component {
           }
         </section> 
           
-        <a href="https://www.paypal.com/donate?business=X3UK3AGW8U2VW&currency_code=CAD" target="_blank" className="coffeeMaker"><img src={coffee} className="coffee"/>Buy me a coffee?</a>
+        <div className="coffeeMaker"><a href="https://github.com/BetaMS/pickmeaclass" target="_blank"><img src={github} className="icon"/></a><a href="https://www.paypal.com/donate?business=X3UK3AGW8U2VW&currency_code=CAD" target="_blank" className="coffeeButton">Buy me a coffee?</a></div>
       </main>
     )
   }
