@@ -98,7 +98,7 @@
     [ 
         1,
         "Warlock",
-        "Warlocks make pacts with extremely powerful beings, who don’t mind lending some power as they have so much they don’t even notice. However, it all comes with a price: There’s a reason this entity decided to accept the pact, and you might need to do some stuff to maintain the accord. Decide whether you want to have a big spellbook full of incantations, a strange summonable weapon or weird servants. Will you perish in the way to becoming an eldritch master?",
+        "Warlocks make pacts with extremely powerful beings, who don’t mind lending some power as they have so much they don’t even notice. However, it all comes with a price: There’s a reason this entity decided to accept the pact, and you might need to do some stuff to maintain the accord. Decide whether you want to have a big spellbook full of incantations, a strange summonable weapon or weird servants.",
         "https://www.dndbeyond.com/classes/warlocks",
         12,
         0
@@ -114,7 +114,7 @@
     [ 
         0,
         "Want some cool magic?",
-        "Fuck yeah!",
+        "Yeah!",
         "No thanks.",
         25,
         15
@@ -217,7 +217,7 @@
     ],
     [
         0,
-        "Want to be really into god/'s?",
+        "Want to be really into god/s?",
         "Amen!",
         "Nope",
         4,
@@ -242,7 +242,7 @@
     [
         0,
         "Want to inspire people with your stories/music?",
-        "Oh, yeah of course!",
+        "Oh. Sure!",
         "Nope",
         3,
         31
@@ -277,7 +277,7 @@
         "Absolutely!",
         "Nah",
         13,
-        35
+        63
     ],
     [
         0,
@@ -502,5 +502,13 @@
         "No",
         14,
         39
+    ],
+    [
+        0,
+        "Maybe a little magic?",
+        "Sure",
+        "No",
+        16,
+        35
     ]
 ]
