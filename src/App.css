@@ -176,7 +176,7 @@ html, body{
           }
 
 .coffeeMaker{
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   height: 45px;
@@ -188,7 +188,7 @@ html, body{
   align-items: right;
 }
   .coffeeButton{
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 10px;
     color: white;
