@@ -160,9 +160,9 @@ class App extends Component {
     let paladinValid = (paladinRange || paladinNext) || outOfRange;
     let rangerValid = rangerRange || paladinOn || rangerNext;
     let rogueValid = base || noMagic || rogueRange || monkOn || barbarianOn || rogueNext;
-    let sorcererValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockOn || sorcererNext;
-    let warlockValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockNext;
-    let wizardValid = base || magic || druidOn || clericOn || artificerOn || bardNext || warlockOn || sorcererOn || wizardNext;
+    let sorcererValid = base || magic || druidOn || clericOn || artificerOn || bardOn || warlockOn || sorcererNext;
+    let warlockValid = base || magic || druidOn || clericOn || artificerOn || bardOn || warlockNext;
+    let wizardValid = base || magic || druidOn || clericOn || artificerOn || bardOn || warlockOn || sorcererOn || wizardNext;
 
     document.title = "Pick Me A Class" 
 
