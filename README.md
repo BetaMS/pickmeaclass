@@ -1,6 +1,6 @@
 <h2>Pick Me A Class</h2>
 
-Can be seen at https://www.pickmeaclass.space
+Can be seen at https://www.pickmeaclass.com
 
 Pick me a class is a simple web application that works kind of like a flow chart.
 
